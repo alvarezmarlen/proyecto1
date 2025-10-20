@@ -1,0 +1,576 @@
+/* --------------------------------------------
+   RESET GENERAL Y TIPOGRAFÍA BÁSICA
+-------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding no sume al ancho */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Fuente legible y moderna */
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+}
+
+
+/* --------------------------------------------
+   ENLACES
+-------------------------------------------- */
+a {
+  text-decoration: none;
+  color: inherit; /* Mismo color que el texto */
+}
+
+/* --------------------------------------------
+   CABECERA
+-------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #0c0e0c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  width: 10%;
+}
+header h2 {
+  margin-left: 20%;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(214, 25, 25); /* Verde natural */
+  font-size: 2rem;
+
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2ce02c;
+}
+
+/* --------------------------------------------
+   MENÚ HAMBURGUESA SOLO CON HTML + CSS
+-------------------------------------------- */
+/* Oculta checkbox */
+.menu-toggle {
+  display: none;
+}
+/* Icono de hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #4caf50;
+  z-index: 1001;
+  padding: 10px 20px;
+}
+
+h2 {
+  color: rgb(214, 25, 25); /* Verde natural */
+  font-size: 2rem;
+
+}
+
+
+
+/* --------------------------------------------
+   PROPIEDADES TRANSFORM
+-------------------------------------------- */
+#transform{
+  background-color: #2ce02c;
+  text-align: center;
+  padding: 5%;
+  
+}
+
+.titulos {
+  font-size: 4rem;
+  color: #0c0e0c;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  }
+
+/* Contenedor que alinea las dos columnas */
+.transform-columns {
+  display:flex;
+  justify-content: center;
+ }
+/* --------------------------------------------
+   Traslate
+-------------------------------------------- */
+.traslatex, .traslatey, .traslatexy{
+  flex: 1 1 300px; /* columnas responsivas */  
+  cursor: pointer;
+}
+.traslatex h2, .traslatey h2, .traslatexy h2 {
+  margin-bottom: 1rem;
+}
+.traslatex img, .traslatey img, .traslatexy img  {
+  width: 100%;
+  max-width: 300px;
+}
+.traslatex img:hover {   
+  transform: translateX(100px);
+}
+.traslatey img:hover  {   
+  transform: translateY(100px);
+}
+.traslatexy img:hover  {   
+  transform: translate(50px, -40px);
+}
+
+/* --------------------------------------------
+   Rotate
+-------------------------------------------- */
+
+.rotate{
+  background-color:rgb(144, 252, 192);
+  text-align: center;
+  padding: 5%;  
+}
+.rotate-deg, .rotate-rad, .rotate-turn{
+  flex: 1 1 300px; /* columnas responsivas */ 
+  cursor: pointer; 
+}
+.rotate-deg h2, .rotate-rad h2, .rotate-turn h2 {
+  margin-bottom: 1rem;
+}
+.rotate-deg img, .rotate-rad img, .rotate-turn img  {
+  width: 100%;
+  max-width: 300px;
+}
+.rotate-deg img:hover {   
+  transform: rotate(45deg);
+}
+.rotate-rad img:hover {   
+  transform: rotate(2.1416rad);
+}
+.rotate-turn img:hover {   
+  transform: rotate(0.50turn);
+}
+
+
+/* --------------------------------------------
+   Scale
+-------------------------------------------- */
+.scale{
+  background-color:rgb(210, 213, 197);
+  text-align: center;
+  padding: 5%;  
+}
+.scalex, .scaley, .scalexy{
+  flex: 1 1 300px; /* columnas responsivas */  
+  cursor: pointer;
+}
+.scalex h2, .scaley h2, .scalexy h2 {
+  margin-bottom: 1rem;
+}
+.scalex img, .scaley img, .scalexy img  {
+  width: 100%;
+  max-width: 300px;
+}
+.scalex img:hover {   
+  transform: scaleX(3);
+}
+.scaley img:hover  {   
+  transform: scaleY(2);
+}
+.scalexy img:hover  {   
+  transform: scale(2 );
+}
+
+
+/* --------------------------------------------
+   skew  (Inclinación)
+-------------------------------------------- */
+.skew {
+  background-color:rgb(136, 228, 90);
+  text-align: center;
+  padding: 5%;  
+}
+.skewx, .skewy, .skewxy{
+  flex: 1 1 300px; /* columnas responsivas */  
+  cursor: pointer;
+}
+.skewx h2, .skewy h2, .skewxy h2 {
+  margin-bottom: 1rem;
+}
+.skewx img, .skewy img, .skewxy img  {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10%;
+}
+.skewx img:hover {   
+  transform: skewX(20deg);
+}
+.skewy img:hover {   
+  transform: skewY(20deg);
+}
+.skewxy img:hover {   
+  transform: skew(30deg, 20deg);
+}
+
+
+/* --------------------------------------------
+   PROPIEDADES TRANSFORM 3D
+-------------------------------------------- */
+.tres-d {
+  background-color: rgb(22, 211, 142);
+  text-align: center;
+  padding: 5%; 
+}
+
+.trasladar3d, .rotar3d, .escalar3d{
+  flex: 1 1 300px; /* columnas responsivas */
+  perspective: 400px;
+  cursor: pointer;  
+}
+.trasladar3d h2, .rotar3d h2, .escalar3d h2 {
+  margin-bottom: 1rem;
+}
+.trasladar3d img, .rotar3d img, .escalar3d img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10%;
+}
+.trasladar3d img:hover {   
+  transform: translate3d(50px, 50px, 100px);
+}
+.rotar3d img:hover {   
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+.escalar3d img:hover {   
+  transform: scale3d(1.5, 0.8, 2);
+}
+
+
+
+/* --------------------------------------------
+   PROPIEDADES TRANSITION
+-------------------------------------------- */
+.transition-columns {
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+ }
+
+#transition {
+  background-color: black;
+  text-align: center;
+  padding: 5%; 
+  color: white;
+}
+.transition-abreviada, .transition-codigo, .transition-explicacion{
+  flex: 1 1 300px; /* columnas responsivas */  
+}
+.transition-abreviada{
+  text-align: justify;
+}
+.transit-color {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+  cursor: pointer;
+}
+.transit-color:hover {
+  width: 300px;
+}
+
+.transition-codigo img, .transition-explicacion img {
+  border-radius: 5%;
+}
+
+
+
+/* --------------------------------------------
+   Sub Propiedades de transition
+-------------------------------------------- */
+.transition-subpropiedades {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 2%; 
+
+}
+.transition-subpropiedades h3{
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.propiedad, .duracion, .tiempo, .retraso{
+  flex: 1 1 300px; /* columnas responsivas */ 
+  text-align: left; 
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.propiedad h4, .duracion h4, .tiempo h4, .retraso h4{
+  color: #160663;
+  font-size: 2rem;  
+}
+
+.propiedad-color {
+  width: 100px;
+  height: 100px;
+  color: #07031b;
+  background: red;
+  overflow: hidden;
+  transition-property: width; 
+  transition-duration: 2s; 
+}
+.propiedad-color:hover {
+  width: 300px;
+}
+.propiedad-color2 {
+  width: 100px;
+  height: 100px;
+  color: #07031b;
+  margin-top: 2rem;
+  background: red;
+  overflow: hidden;
+  transition-property: all; 
+  transition-duration: 2s; 
+}
+.propiedad-color2:hover {
+  width: 300px;
+  background: blue;
+  border-radius: 50%;
+}
+.duracion-color {
+  width: 100px;
+  height: 100px;
+  color: #07031b;
+  background: rgb(0, 0, 255);
+  overflow: hidden;
+  transition-property: width; 
+  transition-duration: 5s; 
+}
+.duracion-color:hover {
+  width: 300px;
+}
+
+
+.tiempo div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #07031b;
+  margin-top: 0.5rem;
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  padding: 10px 0 0 10px;
+}
+/* EASE */
+.tiempo-color{
+  background-color: red;
+  transition: transform 3s ease;
+}
+.tiempo-color:hover {
+  transform: translateX(400px);
+
+  /* EASE-IN */
+}.tiempo-color2 {
+
+  background: rgb(0, 0, 255);
+  transition: transform 3s ease-in;
+}
+.tiempo-color2:hover {
+  transform: translateX(400px);
+
+/* EASE-OUT*/
+}.tiempo-color3 {
+  background: red;
+  transition: transform 3s ease-out;
+}
+.tiempo-color3:hover {
+  transform: translateX(400px);
+}
+
+/* EASE-IN-OUT */
+.tiempo-color4 {
+  background: rgb(0, 0, 255);
+  transition: transform 3s ease-in-out; 
+  }
+.tiempo-color4:hover {
+  transform: translateX(400px);
+}
+
+/* LINEAR */
+.tiempo-color5 {
+  background: red;
+  transition: transform 3s linear;
+}
+.tiempo-color5:hover {
+  transform: translateX(400px);
+}
+
+/* STEP-START */
+.tiempo-color6 {
+  background: rgb(0, 0, 255);
+  transition: width 2s step-start; 
+}
+.tiempo-color6:hover {
+  width: 300px;
+}
+
+/* STEP-END*/
+.tiempo-color7 {
+  background: red;
+  transition: width 2s step-end; 
+}
+.tiempo-color7:hover {
+  width: 300px;
+}
+
+/* STEPS(n, start/end)*/
+.tiempo-color8 {
+  background: rgb(0, 0, 255);
+  /* steps(4, end) = transición en 4 saltos */
+  transition: width 2s steps(4, end); 
+}
+.tiempo-color8:hover {
+  width: 300px;
+}
+
+.retraso-color {
+  width: 100px;
+  height: 100px;
+  color: #07031b;
+  background: rgb(0, 0, 255);
+  overflow: hidden;
+  transition-property: width; 
+  transition-duration: 5s;
+  transition-delay: 2s; 
+}
+.retraso-color:hover {
+  width: 300px;
+}
+
+
+/* --------------------------------------------
+   PROPIEDAD ANIMATION
+-------------------------------------------- */
+#animation{
+  background-color: black;
+  text-align: center;
+  padding: 4%; 
+  color: white;
+   
+}
+
+#animation h3{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.animation-columns {
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10rem;
+ }
+
+.animation-caja1, .animation-caja2, .animation-caja3, .animation-caja4{
+  flex: 1 1 300px; /* columnas responsivas */ 
+  cursor: pointer;   
+}
+.animation-uno {
+  margin: 3rem auto;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  animation: spin 3s linear infinite;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #9fd835;
+  
+}
+@keyframes spin{
+  0% {transform:rotateY(0deg);}
+  100% {transform:rotateY(360deg);}
+}
+
+.animation-dos {
+  margin: 3rem auto;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  position: relative;
+  animation: mymove 3s 2;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #9fd835;
+  
+}
+@keyframes mymove{
+  from {top: 0px;}
+  to {top: 200px; background-color: #160663;}
+}
+
+.animation-tres{
+  position: relative;
+  animation: myfirst 5s 3;
+  animation-direction: reverse;
+    
+}
+@keyframes myfirst {
+  0%   {left: 0px; top: 0px;}
+  25%  {left: 200px; top: 0px;}
+  50%  {left: 200px; top: 200px;}
+  75%  {left: 0px; top: 200px;}
+  100% {left: 0px; top: 0px;}
+}
+
+
+.animation-cuatro:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    animation: dos 5s linear infinite;
+}
+@keyframes dos {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#resumen {
+  background-color: aliceblue;
+  color: #0c0e0c;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 5%;
+  font-size: 2rem;
+}
+.fuentes-consultadas {
+  margin: 5rem;
+  font-size: 2rem;
+  color: #0c0e0c;
+}
+
+/* --------------------------------------------
+   PIE DE PÁGINA
+-------------------------------------------- */
+footer {
+  background: #0c0e0c;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer a {
+  color: #e8f5e9;
+}
+
+
+

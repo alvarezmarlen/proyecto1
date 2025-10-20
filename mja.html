@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Nª1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mja.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.jpg" alt="Logo Css">
+      <h2>PROPIEDADES:</h2>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <nav id="nav-menu">
+        <a href="#transform">TRANSFORM</a>
+        <a href="#transition">TRANSITION</a>
+        <a href="#animation">ANIMATION</a>
+        <a href="#resumen">RESUMEN</a>
+        <a href="#fuentes">FUENTES</a>
+      </nav>
+    </header>
+      <main> 
+        <h2 class="titulos">2D Transform</h2>
+        
+        <section id="transform">
+          <div class="transform-columns">
+            <div class="traslatex">
+              <h2>Traslate X() Function</h2>
+              <img src="img/css-logo.png"  alt="logo css">
+            </div>
+            <div class="traslatey">
+              <h2>Traslate Y() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>    
+            <div class="traslatexy">
+              <h2>Traslate (X, Y) Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>
+          </div>
+        </section>
+
+
+        <section class="rotate">
+          <div class="transform-columns">
+            <div class="rotate-deg">
+              <h2>Rotate() Function</h2>
+              <img src="img/css-logo.png"  alt="logo css">
+            </div>
+            <div class="rotate-rad">
+              <h2>Rotate() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>    
+            <div class="rotate-turn">
+              <h2>Rotate() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section class="scale">
+          <div class="transform-columns">
+            <div class="scalex">
+              <h2>ScaleX() Function</h2>
+              <img src="img/css-logo.png"  alt="logo css">
+            </div>
+            <div class="scaley">
+              <h2>ScaleY() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>    
+            <div class="scalexy">
+              <h2>Scale() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>
+          </div>
+        </section>
+
+
+        <section class="skew">
+          <div class="transform-columns">
+            <div class="skewx">
+              <h2>SkewX() Function</h2>
+              <img src="img/inclinacionX.png"  alt="logo css">
+            </div>
+            <div class="skewy">
+              <h2>SkewY() Function</h2>
+              <img src="img/inclinacionY.png" alt="logo css">        
+            </div>    
+            <div class="skewxy">
+              <h2>Skew () Function</h2>
+              <img src="img/inclinacionXY.png" alt="logo css">        
+            </div>
+          </div>
+        </section>
+
+        <h2 class="titulos">3D Transform</h2>
+        <section class="tres-d">
+          <div class="transform-columns">
+            <div class="trasladar3d">
+              <h2>Traslate3d() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div> 
+            <div class="rotar3d">
+              <h2>Rotate3d() Function</h2>
+              <img src="img/css-logo.png" alt="logo css">        
+            </div>             
+            <div class="escalar3d">
+              <h2>Scale3d() Function</h2>
+              <img src="img/css-logo.png"  alt="logo css">
+            </div>
+          </div>
+        </section>
+
+     <h2 class="titulos">Transition </h2>
+    <section id="transition">
+          <div class="transition-columns">
+            <div class="transition-abreviada" >
+              <h2>Transition abreviada</h2>
+              <p>Esta propiedad nos permite declarar todos los valores de la transición al mismo tiempo.</p>
+              <div class="transit-color"></div> <br><br><br><br>
+              <p>NOTA: Siempre especifique la propiedad transition-duration, de lo contrario la duración será 0s y la transición no tendrá efecto.</p>
+            </div>
+            <div class="transition-codigo">
+              <img src="img/codigo-transition.png" width="300" alt="">
+            </div>    
+            <div class="transition-explicacion">
+              <img src="img/transition-explicacion.png" width="500" alt="">
+            </div>
+          </div>
+    </section>
+
+    <section class="transition-subpropiedades">
+      <h3>Valores de la Transition</h3>
+
+          <div class="transition-columns">
+            <div class="propiedad" >
+              <h4>transition-property</h4>
+              <p>Indica las propiedades que cambian. Se puede usar <strong>all</strong> para aplicar la transición a todas.</p>
+              <div class="propiedad-color">transition-property: width; <br>   transition-duration: 2s;</div>
+              <div class="propiedad-color2"><strong>All</strong> <br>  transition-property: all; <br> transition-duration: 2s; </div>
+            </div>
+
+            <div class="duracion" >
+              <h4>transition-duration</h4>
+              <p>Especifica cuántos segundos (s) tarda en completarse un efecto de transición.</p>
+              <div class="duracion-color">transition-property: width; <br> transition-duration: 5s; </div>
+            </div>
+
+
+            <div class="tiempo" >
+              <h4>transition-timing-function</h4>
+              <p>Controla la velocidad de la transición.</p>
+              <div class="tiempo-color"><strong>ease:</strong> suave al inicio y al final</div>          
+              <div class="tiempo-color2"><strong>ease-in:</strong> lento al principio</div>              
+              <div class="tiempo-color3"><strong>ease-out:</strong>rápido al principio</div>              
+              <div class="tiempo-color4"><strong>ease-in-out:</strong>suave en ambos extremos</div> 
+              <div class="tiempo-color5"><strong>linear:</strong>es constante</div>              
+              <div class="tiempo-color6"><strong>step-start:</strong>salta al final inmediatamente</div>              
+              <div class="tiempo-color7"><strong>step-end:</strong>cambia al final del tiempo</div>              
+              <div class="tiempo-color8"><strong>steps:</strong>por pasos</div>
+            </div>          
+
+
+            <div class="retraso" >
+              <h4>transition-delay</h4>
+              <p>Establece el tiempo de espera antes de iniciar la animación.</p>
+              <div class="retraso-color">transition-property: width; <br>transition-duration: 5s; <br>transition-delay: 2s; </div>
+            </div>
+    </section>
+
+         <h2 class="titulos">Animation</h2>
+    <section id="animation">
+      <h3>Estas propiedades configuran la animación, los pasos se declaran por medio de la regla @keyframes.</h3>
+          <div class="animation-columns">
+            <div class="animation-caja1" >
+              <p>animation-name, duration, timing-function, iteration-count. <br> @keyframes: transform: rotateY</p>
+              <div class="animation-uno"></div>            
+            </div>
+            <div class="animation-caja2" >
+              <p>animation-name, duration, animation-fill-mode. <br>@keyframes: top</p>
+              <div class="animation-dos"></div>              
+            </div>
+            <div class="animation-caja3" >
+              <p>animation-name, duration, animation-iteration-count, animation-direction. <br>@keyframes: % left/top</p>
+              <img src="img/Unicornio1.png" class="animation-tres" width="250px" alt="">             
+            </div>
+            <div class="animation-caja4" >
+              <p>animation-name, duration, animation-fill-mode, animation-iteration-count. <br> @keyframes: transform: rotate</p>
+              <img src="img/unicornio.png" class="animation-cuatro" width="200px" alt="">              
+            </div>
+          </div>
+    </section>
+
+
+    <section id="resumen">
+      <h2 class="titulos">Resumen</h2>
+      <p class="resum"><strong>🌀 transform </strong><br>
+      ➡ Qué cambio quieres hacer <br>📍 (posición, rotación, tamaño, inclinación...) <br><br>
+      <strong>⏳ transition</strong> <br>
+      ➡ Cómo quieres que ocurra ese cambio <br>📍 (duración, suavidad, retraso...) <br><br>
+      <strong>🎬 animation <br></strong>
+      ➡ Qué cambios quieres que ocurran automáticamente o en bucle <br>📍 (movimiento, secuencia, repetición...) <br><br><br>
+      </p>
+      </strong><h3>Accesibilidad</h3></strong>
+      <p class="acce">La  animación  parpadeante  puede  ser  problemática  para  personas  con problemas  cognitivos,  como  el  trastorno  por  déficit  de  atención  e
+      hiperactividad (TDAH). <br><br>Además,  ciertos  tipos  de  movimiento  pueden  desencadenar  trastornos vestibulares, epilepsia, migraña y sensibilidad escotópica. <br><br> La <strong>prefers-reduced-motion </strong> consulta  de  medios  permite  ofrecer  una
+      experiencia con menos animaciones y transiciones a los usuarios que han configurado las preferencias de accesibilidad de su sistema operativo para
+      reducir el movimiento. </p>
+    </section>
+
+    <section id="fuentes">
+      <h2 class="titulos">Fuentes consultadas</h2>
+      <p class="fuentes-consultadas"> 
+        Gauchat, J. D. (2017). El gran libro de HTML5, CSS3 y JavaScript (3.ª ed.) <br>
+        https://css-tricks.com/almanac/properties <br>
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Properties <br>
+        https://www.w3schools.com/css <br>
+        https://chat.openai.com
+      </p> <br>
+    </section>
+
+    </main>
+
+
+    <footer>
+      <p>&copy; 2025 Derechos Reservados</p>
+    </footer>
+  </body>
+</html>
