@@ -7,6 +7,8 @@
   box-sizing: border-box; /* Asegura que el padding no sume al ancho */
 }
 
+
+
 body {
   font-family: 'Open Sans', sans-serif; /* Fuente legible y moderna */
   line-height: 1.6;
@@ -34,9 +36,8 @@ header {
   background: #fff;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1;
   background-color: #0c0e0c;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 header img {
@@ -74,35 +75,34 @@ nav a:hover {
   font-size: 2em;
   cursor: pointer;
   color: #4caf50;
-  z-index: 1001;
   padding: 10px 20px;
 }
 
 h2 {
-  color: rgb(214, 25, 25); /* Verde natural */
+  color: rgb(214, 25, 25); 
   font-size: 2rem;
-
 }
-
-
 
 /* --------------------------------------------
    PROPIEDADES TRANSFORM
 -------------------------------------------- */
-#transform{
-  background-color: #2ce02c;
-  text-align: center;
-  padding: 5%;
-  
+section#transform, section#transition, section#animation, section#resumen, section#fuentes {
+  height: 100vh;
+  scroll-margin-top: 50px; /* deja espacio para el header sticky */
+  padding-top: 5rem;
 }
 
 .titulos {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #0c0e0c;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
+  background-color: aliceblue;  
+}
 
+
+#transform{
+  background-color: #2ce02c;
+  text-align: center;
   }
 
 /* Contenedor que alinea las dos columnas */
@@ -118,7 +118,7 @@ h2 {
   cursor: pointer;
 }
 .traslatex h2, .traslatey h2, .traslatexy h2 {
-  margin-bottom: 1rem;
+  margin: 3rem;
 }
 .traslatex img, .traslatey img, .traslatexy img  {
   width: 100%;
@@ -137,7 +137,6 @@ h2 {
 /* --------------------------------------------
    Rotate
 -------------------------------------------- */
-
 .rotate{
   background-color:rgb(144, 252, 192);
   text-align: center;
@@ -272,11 +271,11 @@ h2 {
 #transition {
   background-color: black;
   text-align: center;
-  padding: 5%; 
   color: white;
 }
 .transition-abreviada, .transition-codigo, .transition-explicacion{
   flex: 1 1 300px; /* columnas responsivas */  
+    padding: 5%; 
 }
 .transition-abreviada{
   text-align: justify;
@@ -467,14 +466,14 @@ h2 {
 #animation{
   background-color: black;
   text-align: center;
-  padding: 4%; 
   color: white;
    
 }
 
 #animation h3{
   font-size: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
+
 }
 .animation-columns {
   display:flex;
@@ -486,6 +485,7 @@ h2 {
 .animation-caja1, .animation-caja2, .animation-caja3, .animation-caja4{
   flex: 1 1 300px; /* columnas responsivas */ 
   cursor: pointer;   
+  padding: 2%; 
 }
 .animation-uno {
   margin: 3rem auto;
@@ -533,7 +533,9 @@ h2 {
   100% {left: 0px; top: 0px;}
 }
 
-
+.animation-cuatro{
+    margin-top: 5rem;
+}
 .animation-cuatro:hover{
     border-radius: 50%;
     box-shadow: 0px 0px 15px 15px #ec731e;
@@ -548,15 +550,34 @@ h2 {
   background-color: aliceblue;
   color: #0c0e0c;
   text-align: center;
-  margin: 2rem;
   border-radius: 5%;
   font-size: 2rem;
+
 }
+#resumen h2, #fuentes h2 {
+  background-color: #d6ddd6;
+  width: 100%;
+}
+.resumen-columns {
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+ }
+
+.resumen-transf, .resumen-transit{
+  flex: 1 1 300px; /* columnas responsivas */ 
+  cursor: pointer;   
+  padding: 5%; 
+}
+
 .fuentes-consultadas {
-  margin: 5rem;
+  padding-top: 5rem;
   font-size: 2rem;
   color: #0c0e0c;
+  margin-left: 10rem;
+  
 }
+
 
 /* --------------------------------------------
    PIE DE PÁGINA
