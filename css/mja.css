@@ -87,9 +87,11 @@ h2 {
    PROPIEDADES TRANSFORM
 -------------------------------------------- */
 section#transform, section#transition, section#animation, section#resumen, section#fuentes {
-  height: 100vh;
-  scroll-margin-top: 50px; /* deja espacio para el header sticky */
+  scroll-margin-top: 60px; /* deja espacio para el header sticky */
   padding-top: 5rem;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .titulos {
@@ -552,7 +554,7 @@ section#transform, section#transition, section#animation, section#resumen, secti
   text-align: center;
   border-radius: 5%;
   font-size: 2rem;
-
+  height: 100vh;
 }
 #resumen h2, #fuentes h2 {
   background-color: #d6ddd6;
@@ -562,14 +564,20 @@ section#transform, section#transition, section#animation, section#resumen, secti
   display:flex;
   justify-content: center;
   gap: 20px;
- }
+  }
 
+ 
 .resumen-transf, .resumen-transit{
   flex: 1 1 300px; /* columnas responsivas */ 
   cursor: pointer;   
   padding: 5%; 
 }
 
+#fuentes{
+  margin-top: 5rem;
+  height: 85vh;
+
+}
 .fuentes-consultadas {
   padding-top: 5rem;
   font-size: 2rem;
