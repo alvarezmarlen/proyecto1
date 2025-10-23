@@ -238,24 +238,33 @@ html {
 
 .trasladar3d, .rotar3d, .escalar3d{
   flex: 1 1 300px; /* columnas responsivas */
-  perspective: 400px;
+  perspective: 600px;
   cursor: pointer;  
 }
 .trasladar3d h2, .rotar3d h2, .escalar3d h2 {
   margin-bottom: 1rem;
 }
-.trasladar3d img, .rotar3d img, .escalar3d img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10%;
+/* Bloque con textos */
+.caja3d {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: transform 0.8s;
 }
-.trasladar3d img:hover {   
+/* Efectos 3D */
+.trasladar3d .caja3d:hover {   
   transform: translate3d(50px, 50px, 100px);
 }
-.rotar3d img:hover {   
+.rotar3d .caja3d:hover {   
   transform: rotate3d(1, 1, 0, 45deg);
 }
-.escalar3d img:hover {   
+.escalar3d .caja3d:hover {   
   transform: scale3d(1.5, 0.8, 2);
 }
 
